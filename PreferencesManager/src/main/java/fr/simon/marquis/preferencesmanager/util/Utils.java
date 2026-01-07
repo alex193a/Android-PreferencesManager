@@ -22,9 +22,10 @@ import android.content.SharedPreferences.Editor;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
-import android.support.v4.app.FragmentManager;
 import android.text.TextUtils;
 import android.util.Log;
+
+import androidx.fragment.app.FragmentManager;
 
 import com.topjohnwu.superuser.Shell;
 

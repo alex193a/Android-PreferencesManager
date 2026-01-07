@@ -61,7 +61,7 @@
             app:typeface="robotoslab_light" />
     </LinearLayout>
 
-    <android.support.v4.widget.ContentLoadingProgressBar
+    <androidx.core.widget.ContentLoadingProgressBar
         android:id="@+id/loadingView"
         style="@style/Widget.AppCompat.ProgressBar"
         android:layout_width="wrap_content"

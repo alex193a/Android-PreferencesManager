@@ -17,8 +17,9 @@ package fr.simon.marquis.preferencesmanager.ui;
 
 import android.app.Application;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatDelegate;
 import android.util.Log;
+
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.topjohnwu.superuser.Shell;
 

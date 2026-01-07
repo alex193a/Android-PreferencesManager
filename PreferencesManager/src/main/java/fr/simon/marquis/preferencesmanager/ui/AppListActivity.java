@@ -15,19 +15,21 @@
  */
 package fr.simon.marquis.preferencesmanager.ui;
 
+import static androidx.core.view.MenuItemCompat.getActionView;
+
 import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.SearchView;
-import android.support.v7.widget.SearchView.OnQueryTextListener;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
+import androidx.core.view.MenuItemCompat;
 
 import com.topjohnwu.superuser.Shell;
 
@@ -170,9 +172,9 @@ public class AppListActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.app_list_activity, menu);
 
         MenuItem searchItem = menu.findItem(R.id.menu_search);
-        mSearchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        mSearchView = (SearchView) getActionView(searchItem);
         mSearchView.setQueryHint(getString(R.string.action_search));
-        mSearchView.setOnQueryTextListener(new OnQueryTextListener() {
+        mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             @Override
             public boolean onQueryTextSubmit(String s) {
